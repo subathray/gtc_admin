@@ -1,0 +1,113 @@
+body{
+    height: 100%;
+    background-color: #C3F8FF;
+
+}
+
+.container {
+
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 500px 50px  ;
+}
+
+.header{
+    text-align: center;
+    grid-column: 1 / -1;
+    background-color: #FFEBAD;
+
+}
+
+.header button{
+    float: right;
+    margin: 20px;;
+}
+
+.menu {
+    background-color: #ABD9FF;
+    grid-column: 1 / 2;
+    grid-row: 2/4;
+}
+
+.menu .nav ul{
+    list-style: none;
+}
+
+.menu .nav ul li {
+    /* border-bottom: 1px solid blue; */
+    box-shadow: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s linear;
+}
+
+a{
+    display: grid;
+    padding:30px 20px;
+    text-decoration: none;
+}
+
+.menu .nav ul li:hover{
+    background-color: rgb(250, 216, 152);
+    color: black;
+    /* color: black; */
+}
+
+.content{
+    background-color: #f5e88f;
+    grid-column: 2 / -1;
+    grid-row: 2/4;
+
+}
+
+.regform{
+
+    width: 500px;
+    margin: 20px 100px;
+    padding: 20px 20px;
+    background-color: rgb(201, 171, 114) ;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.regform h3{
+    text-align: center;
+    color: brown;
+}
+
+.regform label{
+    display: block;
+}
+.input input{
+    width: 90%;
+    font-size:0.7em;
+    border: 1px solid brown;
+    box-shadow: 2px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: 3px 0px 3px 0px;
+}
+.input input:focus{
+    background-color: #f5e88f;
+}
+
+.btn{
+    text-align: center;
+}
+.btn input{
+    /* background-color: rgb(232, 174, 99); */
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid brown;
+    box-shadow: 2px;
+}
+
+.footer{
+     background-color: inherit;
+     grid-column: 1 / -1;
+}
+

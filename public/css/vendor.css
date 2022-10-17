@@ -1,0 +1,120 @@
+body{
+    height: 100%;
+    background: url('/img/bg_16.jpg');
+    /* background-color: #C3F8FF; */
+
+}
+
+.container {
+
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 500px 50px  ;
+}
+
+.header{
+    text-align: center;
+    grid-column: 1 / -1;
+    /* background-color: #FFEBAD; */
+
+}
+button{
+    cursor: pointer;
+}
+
+.header button{
+    float: right;
+    margin: 20px;;
+}
+
+.menu {
+    /* background-color: #ABD9FF; */
+    grid-column: 1 / 2;
+    grid-row: 2/4;
+}
+
+.menu .nav ul{
+    list-style: none;
+}
+
+.menu .nav ul li {
+    /* border-bottom: 1px solid blue; */
+    box-shadow: none;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+a{
+    display: grid;
+    padding:30px 20px;
+    font-size: larger;
+    text-decoration: none;
+    color: blue;
+    
+
+}
+
+.menu .nav ul li:hover{
+    background-color: wheat;
+    color: black;
+    /* color: black; */
+}
+
+.content{
+    /* background-color: #FFF6BF; */
+    grid-column: 2 / -1;
+    grid-row: 2/4;
+
+}
+
+.content button{
+    margin: 30px 10px 50px 10px;
+    float: right;
+}
+
+ table {
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 60%;
+    /* height: 100%; */
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table td, th {
+    border: 2px solid rgb(57, 55, 55);
+    padding: 10px;
+}
+
+table th{
+    /* background-color: rgb(202, 143, 70); */
+
+}
+
+/* table td{
+
+} */
+
+.container tr:nth-child(even){
+    /* background-color: rgb(197, 168, 132); */
+}
+
+.container tr:hover{
+    background-color:brown ;
+}
+
+.footer{
+     background-color: inherit;
+     grid-column: 1 / -1;
+}
+
+.fa-solid fa-magnifying-glass{
+    margin:200px;
+    padding:5px;
+    font-size: 70px;
+    background-color: blue;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Add Vendor</title>
+    <script src="/js/jquery-3.6.1.js"></script>
+    <script src="/js/addVendor.js"></script>
+    <link rel="stylesheet" href="/css/addVendor.css">
+    <link rel="icon" href="/img/logo.jpg">
+</head>
+
+<body>
+    <div class='container'>
+        <div class="header">
+            <button>Log Out</button>
+
+            <h2>Global Connect</h2>
+
+        </div>
+        <div class="menu">
+            <nav class="nav">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/admin">Admin</a></li>
+                    <li><a href="/vendor">Vendor</a></li>
+                    <li><a href="/user">User</a></li>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="#">Ad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="regform">
+                <form id="vendorForm">
+                    <fieldset>
+                        <h3>{{title}}</h3>
+                        <div class="input">
+                            <label>Company Name:</label>
+                            <input type="text" placeholder="Enter Name">
+                            <br>
+                            <br>
+                            <label>Company Name:</label>
+                            <input type="text" placeholder="Enter Name">
+                            <br>
+                            <br>
+                            <label>Email ID:</label>
+                            <input type="email" placeholder="Enter Email ID" <br>
+                            <br>
+                            <br>
+                            <label>Plan:</label>
+                            <select>
+                                <option value="-1">Select Plan</option>
+                                <option value="A">Plan A</option>
+                                <option value="B">Plan B</option>
+                                <option value="C">Plan C</option>
+                                <option value="D">Plan D</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label>Status:</label>
+                            <select>
+                                <option value="-1">Select Status</option>
+                                <option name="complete">Complete</option>
+                                <option name="incomplete">Incomplele</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

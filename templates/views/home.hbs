@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Home page</title>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> --}}
+
+    <script src="/js/home.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="/img/logo.jpg">
+</head>
+<body>
+   
+       <div class="container">
+        <div class="header"><h1>Global Trade Connect</h1></div>
+        <div class="menu">
+            <nav class="nav">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/admin">Admin</a></li>
+                    <li><a href="/vendor">Vendor</a></li>
+                    <li><a href="/user">User</a></li>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="#">Ad</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="container1">
+            <div id="chartContainer1"></div>
+        </div>
+        <div class="container2">
+            {{!-- <h3>Top 5 Vendors</h3> --}}
+            <div id="container"></div>
+        </div>
+        <div class="container3">
+            <div id="chart_div"></div>
+
+        </div>
+        <div class="footer">
+            <button id="btn">Log Out</button>
+
+        </div>
+       </div>
+   </body>
+</html>

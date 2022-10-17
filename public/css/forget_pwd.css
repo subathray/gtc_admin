@@ -1,0 +1,21 @@
+body{
+    background: url('/img/bg_6.jpg');
+    background-repeat: no-repeat;
+}
+
+.header h1{
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(63, 63, 194);
+}
+
+.content{
+    font-weight: bolder;
+    margin-top: 120px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+    
+
+
