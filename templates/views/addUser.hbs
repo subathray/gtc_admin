@@ -2,6 +2,7 @@
 
 <head>
     <title>Add User</title>
+    <script src="/js/jquery-3.6.1.js"></script>
     <link rel="stylesheet" href="/css/addUser.css">
     <link rel="icon" href="/img/logo.jpg">
     <script src="/js/addUser.js"></script>
@@ -10,9 +11,9 @@
 <body>
     <div class='container'>
         <div class="header">
-            <button>Log Out</button>
+            <button id="logOut">Log Out</button>
 
-            <h2>Global Connect</h2>
+            <h2>Global Trade Connect</h2>
 
         </div>
         <div class="menu">
@@ -29,26 +30,26 @@
         </div>
         <div class="content">
             <div class="regform">
-                <form>
+                <form id="userForm">
                     <fieldset>
-                        <h3>Add User</h3>
+                        <h3>{{title}}</h3>
                         <div class="input">
                             <label>Name:</label>
-                            <input type="text" placeholder="Enter Name">
+                            <input id="userName" type="text" placeholder="Enter Name">
                             <br>
                             <br>
                             <label>Email:</label>
-                            <input type="email" placeholder="Enter Email ID ">
+                            <input id="email" type="email" placeholder="Enter Email ID ">
                             <br>
                             <br>
                             <label>Password:</label>
-                            <input type="password" placeholder="Enter Password ">
+                            <input id="password" type="password" placeholder="Enter Password ">
                             <br>
                             <br>
                         </div>
                         <div class="btn">
                             <input type="submit" value="Create">
-                            <input type="reset" value="Reset">
+                            <input id="reset" type="reset" value="Reset">
                         </div>
                     </fieldset>
 

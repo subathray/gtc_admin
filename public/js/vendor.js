@@ -13,4 +13,7 @@ $(document).ready(function () {
        location.href = '/vendor/edit'
     })
 
+    $('#logOut').click(function () {
+        location.href = '/'
+    })
 })

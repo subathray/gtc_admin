@@ -1,7 +1,6 @@
 body{
     height: 100%;
-    background-color: #C3F8FF;
-
+    background: url('/img/bg_25.jpg');
 }
 
 .container {
@@ -17,11 +16,11 @@ body{
     text-align: center;
     grid-column: 1 / 6;
     grid-row: 1/2;
-    background-color: #FFEBAD;
+    /* background-color: #FFEBAD; */
 }
 
 .header h1{
-    color: brown;
+    color: blue;
 }
 
 .sidebar{
@@ -37,7 +36,7 @@ body{
 
 
 .content{
-    background-color: #f5e88f;
+    /* background-color: #f5e88f; */
     grid-row: 2/3;
     grid-column: 2/6;
     
@@ -46,7 +45,7 @@ body{
 .menu {
     grid-row: 2/3;
     grid-column: 1/2;
-    background-color: #ABD9FF;
+    /* background-color: #ABD9FF; */
 }
 .menu .nav ul{
     list-style: none;
@@ -56,23 +55,21 @@ body{
     /* border-bottom: 1px solid blue; */
     box-shadow: none;
     text-transform: uppercase;
-    font-weight: 500;
     transition: all 0.2s linear;
 }
 
 a{
     display: grid;
     padding:30px 20px;
+    font-size: 25px;
     text-decoration: none;
+    font-weight: bold;
+    color: rgb(182, 15, 182);
 }
 
 .menu .nav ul li:hover{
-    background-color: wheat;
-    color: black;
-    /* color: black; */
+    background-color: thistle;
 }
-
-
 
 .content button{
     margin: 30px 10px 50px 10px;
@@ -91,28 +88,26 @@ a{
 }
 
 table td, th {
-    border: 1px solid grey;
+    border: 2px solid  rgb(57, 55, 55);
     padding: 10px;
 }
 
 table th{
-    background-color: rgb(202, 143, 70);
+    background-color: rgb(190, 165, 185);
 
 }
 
-/* table td{
-
-} */
 
 .container tr:nth-child(even){
-    background-color: rgb(197, 168, 132);
+    background-color: rgb(235, 214, 231);
 }
 
-.container tr:hover{background-color:brown ;}
+.container tr:hover{
+    background-color:  rgb(230, 201, 165) ;
+}
 
 
 .footer{
     grid-row: 3/4;
     grid-column: 1/6;
-    background-color: #f5e88f;
 }

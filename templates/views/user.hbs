@@ -14,7 +14,7 @@
             <h1>Global Trade Connect</h1>
         </div>
         <div class="sidebar">
-            <button>Log Out</button>
+            <button id="logOut">Log Out</button>
         </div>
         <div class="content">
             <br>
@@ -27,45 +27,33 @@
             <br>
             <br>
             <div class="buttons">
-                <button>Delete</button>
+                <button id="deleteBtn">Delete</button>
                 <button id="addBtn">Add User</button>
-                <button>Edit</button>
+                <button id="editBtn">Edit</button>
             </div>
             <br>
             <br>
             <div>
-                <table>
+                <table id="users">
                     <thead>
                         <tr>
+                            <th></th>
                             <th>Name</th>
                             <th>Email ID</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {{#each userArr}}
                         <tr>
-                            <td>User 1</td>
-                            <td>User1@gmail.com</td>
+                            <td>
+                                <input type="checkbox" id="{{this._id}}" />
+                            </td>
+                            <td>{{this.name}}</td>
+                            {{!-- <td>{{this.password}}</td> --}}
+                            <td>{{this.email_id}}</td>
+                            {{!-- <td>{{this.status}}</td> --}}
                         </tr>
-                        <tr>
-                            <td>User 2</td>
-                            <td>User2@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>User 3</td>
-                            <td>User3@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>User 4</td>
-                            <td>User4@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>User 5</td>
-                            <td>User5@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>User 6</td>
-                            <td>User6@gmail.com</td>
-                        </tr>
+                        {{/each}}
                     </tbody>
                 </table>
 
@@ -74,7 +62,7 @@
             <br>
         </div>
         <div class="menu">
-             <nav class="nav">
+            <nav class="nav">
                 <ul>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/admin">Admin</a></li>

@@ -1,7 +1,13 @@
 body{
     height: 100%;
-    background: url('/img/bg_16.jpg');
+    background: url('/img/bg_25.jpg');
+
     /* background-color: #C3F8FF; */
+
+}
+
+.container h1{
+    color: blue;
 
 }
 
@@ -49,17 +55,17 @@ button{
 a{
     display: grid;
     padding:30px 20px;
-    font-size: larger;
+    font-size: 25px;
     text-decoration: none;
-    color: blue;
+    font-weight: bold;
+    color: rgb(182, 15, 182);
+
     
 
 }
 
 .menu .nav ul li:hover{
-    background-color: wheat;
-    color: black;
-    /* color: black; */
+    background-color: thistle;
 }
 
 .content{
@@ -91,20 +97,18 @@ table td, th {
 }
 
 table th{
-    /* background-color: rgb(202, 143, 70); */
+    background-color: rgb(190, 165, 185);
 
 }
 
-/* table td{
-
-} */
 
 .container tr:nth-child(even){
-    /* background-color: rgb(197, 168, 132); */
+    background-color:  rgb(235, 214, 231);
+
 }
 
 .container tr:hover{
-    background-color:brown ;
+    background-color: rgb(230, 201, 165);
 }
 
 .footer{

@@ -1,89 +1,42 @@
 body{
     height: 100%;
-    background-color: #C3F8FF;
+     background-color: #C3F8FF;
+    background: url('/img/bg_13.jpg');
 
 }
 
-.container {
+h2 {
+    color: #FFD662FF;
 
-    height: 100%;
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px 520px 20px  ;
-}
-
-.header{
     text-align: center;
-    grid-column: 1 / -1;
-    background-color:  #C3F8FF;
-
-}
-
-/* .header button{
-    float: right;
-    margin: 20px;;
-}
-
-.menu {
-    background-color: #ABD9FF;
-    grid-column: 1 / 2;
-    grid-row: 2/4;
-}
-
-.menu .nav ul{
-    list-style: none;
-}
-
-.menu .nav ul li { */
-    /* border-bottom: 1px solid blue; */
-    /* box-shadow: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: all 0.2s linear;
-} */
-
-a{
-    display: grid;
-    padding:30px 20px;
-    text-decoration: none;
-    float: right;
-}
-
-
-.content{
-    background-color:  #C3F8FF;
-    grid-column: 2 / -1;
-    grid-row: 2/4;
+    font-size: 40px;
 
 }
 
 .regform{
-    width: 600px;
-    margin: 5px 100px;
-    padding: 20px 20px;
-    background-color: rgb(201, 171, 114) ;
-    font-size: 20px;
-    border-radius: 10px;
+    margin-left: 30px;
+}
+
+
+.regform label{
+    color:  rgb(244, 223, 244);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 .regform h3{
-    text-align: center;
-    color: brown;
+    color: rgb(223, 137, 223);
+    font-size: 30px;
 }
 
-.regform label{
-    display: block;
-}
-.input input{
-    width: 70%;
-    font-size:0.7em;
-    border: 1px solid brown;
-    box-shadow: 2px;
-    border-radius: 8px;
+ .input input{
+    width: 15%;
+    font-size:1em;
+    border: 1.5px solid pink;
     padding: 5px 5px;
     box-sizing: border-box;
-    margin: 3px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .submit input{
@@ -92,7 +45,6 @@ a{
 }
  
 .input input:focus{
-    background-color: #f5e88f;
+    background-color: #dcd8be;
 }
-
  
