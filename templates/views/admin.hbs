@@ -4,7 +4,6 @@
     <title>Admin</title>
     <script src="/js/jquery-3.6.1.js"></script>
     <script src="/js/admin.js"></script>
-
     <link rel="stylesheet" href="/css/admin.css">
     <link rel="icon" href="/img/logo.jpg">
 </head>
@@ -13,9 +12,7 @@
     <div class='container'>
         <div class="header">
             <button id="logOut">Log Out</button>
-
             <h1>Global Trade Connect</h1>
-            
         </div>
         <div class="menu">
             <nav class="nav">
@@ -28,15 +25,12 @@
                     <li><a href="#">Ad</a></li>
                 </ul>
             </nav>
-
-
-
         </div>
         <div class="content">
             <br>
             <br>
             <div class="buttons">
-                <button>Delete</button>
+                <button id="deleteBtn">Delete</button>
                 <button id="addBtn">Add Admin</button>
                 <button id="editBtn">Edit</button>
 
@@ -45,51 +39,32 @@
             <br>
             <div>
                 <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Name</th>
-                        <th>Email ID</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{!-- <tr>
-                        <input type="checkbox">
-                        <td>Admin1</td>
-                        <td>admin1</td>
-                    </tr> --}}
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Admin2</td>
-                        <td>admin2@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Admin3</td>
-                        <td>admin3@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Admin4</td>
-                        <td>admin4@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Admin5</td>
-                        <td>admin5@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Admin6</td>
-                        <td>admin6@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each adminArr}}
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="{{this._id}}"/>
+                            </td>
+                            <td>{{this.name}}</td>
+                            {{!-- <td>{{this.password}}</td> --}}
+                            <td>{{this.email_id}}</td>
+                            <td>{{this.status}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
             </div>
             <br>
             <br>
-            
+
         </div>
         <div class="footer"></div>
     </div>

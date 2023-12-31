@@ -11,6 +11,7 @@ const getVendors = async function(req, res){
 
 const saveVendor = async function(req, res){
     try{
+        req.body.password = await bcrypt.hash(req.body.password, 8);
         await Service.saveVendor(req);
         res.status(201).send('Vendor Record Saved Succesfully');
     }catch(e){

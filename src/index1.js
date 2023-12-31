@@ -9,7 +9,9 @@ const app = express();
 const publicDirPath = path.join(__dirname, '../public');
 const viewPath = path.join(__dirname, '../templates/views');
 
-const User = require('./models/user');
+const User = require('./models/user')
+
+
 const Vendor = require('./models/vendor');
 const Product = require('./models/product')
 const Admin = require('./models/admin');
@@ -34,7 +36,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
 
-app.get
+
 app.get('/vendor/edit', function (req, res) {
     res.render('addVendor', {
         title: 'Edit Vendor'

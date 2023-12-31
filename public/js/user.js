@@ -13,7 +13,7 @@ $(document).ready(function () {
     })
 
     $('#logOut').click(function () {
-        location.href = '/'
+        location.href = '/' 
     })
 
     $("#deleteBtn").click(function () {
@@ -33,7 +33,7 @@ $(document).ready(function () {
         // console.log('Checked id', checkedIds[0]);
     
         $.ajax({
-            url: `/api/users/${checkedIds[0]}`,
+            url: `/api/user/${checkedIds[0]}`,
             type: "DELETE",
             success: function(result) {
                 location.reload();

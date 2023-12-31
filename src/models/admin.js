@@ -6,7 +6,7 @@ const adminSchema = new mongoose.Schema({
         required: true,
         trim: true,
     },
-    email: {
+    email_id: {
         type: String,
         required: true,
         trim: true,
@@ -21,7 +21,8 @@ const adminSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['Active', 'Inactive']
+        enum: ['Active', 'Inactive'],
+        default: 'Active'
     }
 })
 

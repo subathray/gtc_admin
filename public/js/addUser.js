@@ -4,9 +4,9 @@ $(document).ready(function () {
         location.href = '/'
     })
 
-    $("#backBtn").click(function () {
-        location.href = "/users";
-    })
+    // $("#backBtn").click(function () {
+    //     location.href = "/user";
+    // })
 
     $("#userForm").submit(function (e) {
         e.preventDefault();
@@ -36,11 +36,11 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: "/api/users",
+            url: "/api/user",
             type: "POST",
             data: userObj,
             success: function (result) {
-                location.href = '/users';
+                location.href = '/user';
                 // alert(result);
                 // $("#userName").val("");
                 // $("#email").val("");
@@ -53,3 +53,4 @@ $(document).ready(function () {
         })
     })
 })
+                                      

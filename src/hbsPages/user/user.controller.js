@@ -15,7 +15,7 @@ const addUser = function(req, res){
 }
 
 const editUser = function(req, res){
-    res.render('addUser', {
+    res.render('editUser', {
         title: "Edit User"
     });
 }

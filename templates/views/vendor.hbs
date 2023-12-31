@@ -32,13 +32,13 @@
             <br>
             <br>
             <div>
-                <input type="text" placeholder="Search Products" >
-            <i class="fa-solid fa-magnifying-glass"></i> 
+                <input type="text" placeholder="Search Products">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <br>
             <br>
             <div class="buttons">
-                <button>Delete</button>
+                <button id="deleteBtn">Delete</button>
                 <button id="addBtn">Add</button>
                 <button id="editBtn">Edit</button>
 
@@ -55,10 +55,24 @@
                             <th>Email ID</th>
                             <th>Revenue</th>
                             <th>Company Name</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
+                        {{#each vendorArr}}
                         <tr>
+                            <td>
+                                <input type="checkbox" id="{{this._id}}">
+                            </td>
+                            <td>{{this.name}}</td>
+                            <td>{{this.plan}}</td>
+                            <td>{{this.email_id}}</td>
+                            <td>{{this.revenue}}</td>
+                            <td>{{this.company_name}}</td>
+                            <td>{{this.status}}</td>
+                        </tr>
+                        {{/each}}
+                        {{!-- <tr>
                             <td><input type="checkbox"></td>
                             <td>Vendor1</td>
                             <td>Plan A</td>
@@ -105,7 +119,7 @@
                             <td>vendor6@gmail.com</td>
                             <td>85,000</td>
                             <td>XBA pvt.ltd</td>
-                        </tr>
+                        </tr> --}}
                     </tbody>
                 </table>
 
